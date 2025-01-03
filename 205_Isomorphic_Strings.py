@@ -17,10 +17,4 @@ def isIsomorphic(s: str, t: str) -> bool:
                 
         return True
     
-    
-#Test Cases
-
-print(isIsomorphic("egg", "add"))  # Output: True
-print(isIsomorphic("foo", "bar"))  # Output: False
-print(isIsomorphic("paper", "title"))  # Output: True
 
