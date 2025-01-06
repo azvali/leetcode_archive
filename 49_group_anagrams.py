@@ -4,6 +4,7 @@ def groupAnagrams(strs):
     
     for x in strs:
         arrKey = []
+        sortedWord = x.sort()
         
         for c in x:
             cur = ord(c) - ord("a")
