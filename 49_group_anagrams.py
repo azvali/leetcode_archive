@@ -11,8 +11,8 @@ def groupAnagrams(strs):
             arrKey.append(cur)
             
         if arrKey not in hashmap:
-            hashmap[tuple(arrKey)] = [x]
+            hashmap[tuple(arrKey)] = [sortedWord]
         else:
-            hashmap[tuple(arrKey)].append(x)
+            hashmap[tuple(arrKey)].append(sortedWord)
         
     return list(hashmap.values())
