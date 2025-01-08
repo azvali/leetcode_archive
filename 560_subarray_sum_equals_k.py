@@ -1,21 +1,23 @@
-def subarraySum(nums, k):
-
+def subarraySum(nums: List[int], k: int) -> int:
+    
     hashmap = {0 : 1}
-    sum = 0
     res = 0
+    cursum = 0
     
     for x in nums:
-        
-        sum += x
-        
-        diff = sum - k
+        cursum += x
+        diff = cursum - k
         
         if diff in hashmap:
             res += hashmap[diff]
-        
-        hashmap[sum] = hashmap.get(sum, 0) + 1
-        
+            
+        hashmap[cursum] = hashmap.get(cursum, 0) + 1
+            
+            
+            
     return res
             
-        
-        
+            
+            
+            
+            
