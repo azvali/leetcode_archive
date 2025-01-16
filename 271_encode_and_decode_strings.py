@@ -2,7 +2,7 @@ class Codec:
     
     
     
-    def encode(self, strs: List[str]) -> str:
+    def encode(self, strs: list[str]) -> str:
         
         encoded_parts = []
         
@@ -17,7 +17,7 @@ class Codec:
                 
             
 
-    def decode(self, s: str) -> List[str]:
+    def decode(self, s: str) -> list[str]:
         
         res = []
         x = 0

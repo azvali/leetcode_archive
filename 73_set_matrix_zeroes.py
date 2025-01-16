@@ -1,4 +1,4 @@
-def setZeroes(matrix: List[List[int]]) -> None:
+def setZeroes(matrix: list[list[int]]) -> None:
     
     rowlen = len(matrix)
     collen = len(matrix[0])

@@ -1,4 +1,4 @@
-def containsNearbyDuplicate(nums: List[int], k: int) -> bool:
+def containsNearbyDuplicate(nums: list[int], k: int) -> bool:
     
     
     rangeWindow = set()

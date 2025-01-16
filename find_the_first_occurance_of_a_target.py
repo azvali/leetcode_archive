@@ -1,4 +1,4 @@
-def findFirstOccurrence(nums: List[int], target: int) -> int:
+def findFirstOccurrence(nums: list[int], target: int) -> int:
     l , r = 0 , len(nums) - 1
     
     

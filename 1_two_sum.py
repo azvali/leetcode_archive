@@ -1,4 +1,4 @@
-def two_sum(nums: List[int], target: int) -> List[int]:
+def two_sum(nums: list[int], target: int) -> list[int]:
     
     hashmap = {}
 

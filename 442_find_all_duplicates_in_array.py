@@ -1,4 +1,4 @@
-def findDuplicates(nums: List[int]) -> List[int]:
+def findDuplicates(nums: list[int]) -> list[int]:
     
     
     hashmap = {}
