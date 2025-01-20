@@ -1,6 +1,8 @@
 def removeDuplicates(nums: list[int]) -> int:
     
-    
+    if not nums:
+        return 0
+
     p1, p2 = 0, 1
     res = 1
     
