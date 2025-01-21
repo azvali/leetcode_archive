@@ -10,4 +10,5 @@ def findDuplicate(nums: list[int]) -> int:
         
         
         
+# wrong answer use floyds algorithm
             
