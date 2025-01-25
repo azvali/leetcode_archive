@@ -1,6 +1,4 @@
-def backspaceCompare(s: str, t: str) -> bool:
-    
-    
+def backspaceCompare(s: str, t: str) -> bool:   
     
     p1 = len(s) - 1
     p2 = len(t) - 1
