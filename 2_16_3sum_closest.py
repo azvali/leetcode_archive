@@ -2,7 +2,7 @@ def threeSumClosest(nums: list[int], target: int) -> int:
     
     
     res = float('inf')
-    maxdiff = float('inf')
+    mindiff = float('inf')
     nums.sort()
     
     for x in range(len(nums) - 2):
