@@ -9,8 +9,7 @@ def findMaxAverage(nums: List[int], k: int) -> float:
         cur += nums[r]
         r += 1
     
-    avg = cur / k 
-    res = max(res, avg)
+    res = max(res, cur / k)
         
         
     while r < len(nums):
