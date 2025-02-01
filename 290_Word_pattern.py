@@ -1,34 +1,23 @@
 def wordPattern(pattern: str, s: str) -> bool:
     
-    hashmap = {}
-    arr = []
-    word = ""
-    
-    for x in s:
-        if x != " ":
-            word += x
-            continue
-        arr.append(word)
-        word = ""
+    words = s.split()
         
-    if word:
-        arr.append(word)
-    
-    # ^^^ the split() method would do what this does so it would be better to just do arr = s.split() and it would split the string into words
-        
-        
-    if len(pattern) != len(arr):
+    if len(pattern) != len(words):  
         return False
-    
-    for i, j in zip(pattern, arr):
-        if i not in hashmap:
-            hashmap[i] = j
-        else:
-            if hashmap[i] != j:
-                return False
+        
+    hashmap_p_to_w = {}
+    hashmap_w_to_p = {}
+        
+    for p, w in zip(pattern, words):
+        if p in hashmap_p_to_w and hashmap_p_to_w[p] != w:
+            return False
+        if w in hashmap_w_to_p and hashmap_w_to_p[w] != p:
+            return False
+            
+        hashmap_p_to_w[p] = w
+        hashmap_w_to_p[w] = p  
         
     return True
-            
     
     
             

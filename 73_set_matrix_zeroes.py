@@ -6,7 +6,16 @@ def setZeroes(matrix: list[list[int]]) -> None:
     rows = [False] * rowlen
     cols = [False] * collen
     
-    
+    def rowzero(arr, row):
+        
+        for x in range(len(arr[row])):
+            arr[row][x] = 0
+            
+        
+    def colzero(arr, col):
+        for x in range(len(arr)):
+            arr[x][col] = 0
+            
     
     for x in range(len(matrix)):
         
@@ -26,15 +35,6 @@ def setZeroes(matrix: list[list[int]]) -> None:
             colzero(matrix, x)
     
     
-    def rowzero(arr, row):
-        
-        for x in range(len(arr[row])):
-            arr[row][x] = 0
-            
-        
-    def colzero(arr, col):
-        for x in range(len(arr)):
-            arr[x][col] = 0
-            
+    
                 
             

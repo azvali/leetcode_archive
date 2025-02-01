@@ -5,9 +5,13 @@ def fourSum(nums: list[int], target: int) -> list[list[int]]:
     res = []
     
     for x in range(len(nums)):
+        if x > 0 and nums[x] == nums[x - 1]:
+            continue
         
         for n in range(x + 1, len(nums)):
-
+            if n > x + 1 and nums[n] == nums[n - 1]:
+                continue
+            
             l,r = n + 1, len(nums) - 1
 
             while l < r:

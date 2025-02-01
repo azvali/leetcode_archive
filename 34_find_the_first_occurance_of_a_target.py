@@ -1,5 +1,6 @@
 def findFirstOccurrence(nums: list[int], target: int) -> int:
     l , r = 0 , len(nums) - 1
+    first = -1
     
     
     while l <= r:
@@ -9,11 +10,11 @@ def findFirstOccurrence(nums: list[int], target: int) -> int:
             l = cur + 1
         elif target < nums[cur]:
             r = cur - 1
-        elif cur > 0 and nums[cur] == nums[cur - 1]:
-            r = cur - 1 
         else:
-            return cur
-    return -1
+            first = cur
+            r = cur - 1
+            
+    return first
         
         
         
