@@ -13,7 +13,7 @@ def checkInclusion(self, s1: str, s2: str) -> bool:
         if hashmap == s1freq:
             return True
        
-        while r - l + 1 >= len(s1):
+        if r - l + 1 >= len(s1):
             hashmap[s2[l]] -= 1
             if hashmap[s2[l]] == 0:
                 del hashmap[s2[l]]
